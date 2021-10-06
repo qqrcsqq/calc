@@ -72,7 +72,7 @@ public class CalculatorTest {
     /**
      * Test of multiply method, of class Calculator.
      */
-    /*@Test
+    @Test
     public void testMultiply() {
         System.out.println("multiply");
         double num1 = 20.0;
@@ -88,7 +88,7 @@ public class CalculatorTest {
     /**
      * Test of divide method, of class Calculator.
      */
-   /* @Test
+   @Test
     public void testDivide() {
         System.out.println("divide");
         double num1 = 10.0;
