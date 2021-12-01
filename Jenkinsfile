@@ -4,7 +4,9 @@ pipeline {
 
     stages {
         stage('Clean') {
-            deleteDir()
+            steps {
+                deleteDir()
+            }
         }
         stage('Build') {
             steps {
