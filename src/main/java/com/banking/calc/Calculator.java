@@ -10,7 +10,7 @@ package com.banking.calc;
  * @author itexps
  */
 public class Calculator {
-    public double add(double num1, double num2){
+    public v double add(double num1, double num2){
         return num1+num2;
     }
     
