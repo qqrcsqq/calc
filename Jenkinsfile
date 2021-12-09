@@ -10,11 +10,11 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/nlilaramani/Calc.git'
-                export MAVEN_HOME=/opt/maven
-                export PATH=$PATH:$MAVEN_HOME/bin
-
+                withMaven(){
+                    sh "mvn -Dmaven.test.failure.ignore=true clean package"    
+                }
                 // Run Maven on a Windows agent.
-                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                //sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
                 // To run Maven on a Unix agent, use
                 // sh "mvn -Dmaven.test.failure.ignore=true clean package"
