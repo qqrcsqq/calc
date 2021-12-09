@@ -10,7 +10,7 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/nlilaramani/Calc.git'
-                withMaven(){
+                withMaven{
                     sh "mvn -Dmaven.test.failure.ignore=true clean package"    
                 }
                 // Run Maven on a Windows agent.
