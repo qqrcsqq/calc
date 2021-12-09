@@ -12,7 +12,7 @@ pipeline {
                 git 'https://github.com/nlilaramani/Calc.git'
 
                 // Run Maven on a Windows agent.
-                bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
                 // To run Maven on a Unix agent, use
                 // sh "mvn -Dmaven.test.failure.ignore=true clean package"
