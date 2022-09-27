@@ -12,10 +12,13 @@ package com.banking.calc;
  */
 public class Calculator {
     public  double add(double num1, double num2){
+        num=1;
+        num+=1;
         return num1+num2;
     }
     
     public double subtract(double num1,double num2){
+        boolean result;
         return num1-num2;
     }
     public double multiply(double num1,double num2){
@@ -23,6 +26,11 @@ public class Calculator {
     }
     public double divide(double num1,double num2){
         return num1/num2;
+    }
+    public double dd(int avc){
+        int x_y=2;
+        double Z1=2.3;
+        return x_y;
     }
     
 }
