@@ -12,8 +12,7 @@ package com.banking.calc;
  */
 public class Calculator {
     public  double add(double num1, double num2){
-        num=1;
-        num+=1;
+        int num=1;
         return num1+num2;
     }
     
