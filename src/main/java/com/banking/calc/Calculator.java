@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 // Some comment
+// comment 2
 package com.banking.calc;
 
 /**
